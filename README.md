@@ -16,7 +16,7 @@ This repository includes the SLT code to reproduce the mainline experiments of t
 * TinyImageNet and ImageNet64 (downsampled resolution) have to be downloaded from https://image-net.org/download-images
 
 ## Run FL Experiments
-Each run (with specific arguments) creates an folder (`run_HASH`) with a specific hash of the configuration. If a specific run is run again, the results are overridden. The experiment folder is created at `runs/{session_tag}/`. Every 25 FL rounds, plots are generated. Alternativly, plots can be generated manually using `python3 utils/plots.py --path {PATH_TO_SESSION_TAG_FOLDER}`
+Each run (with specific arguments) creates an folder (`run_HASH`) with a specific hash of the configuration. If a specific run is run again, the results are overridden. The experiment folder is created at `runs/{session_tag}/`. Every 25 FL rounds, plots are generated. Alternativly, plots can be generated manually using `python3 visualization/plots.py --path {PATH_TO_SESSION_TAG_FOLDER}`
 
 ```bash
 usage: python3 run_fl.py [-h] [--session_tag SESSION_TAG] [--algorithm {SLT,FederatedDropout,FedAvg,FedRolex,HeteroFL,FjORD}]
